@@ -1,4 +1,4 @@
-baseURL = 'https://dhessmedia.com/'
+baseURL = 'https://jimmyhess.github.io/dhessmedia-site/'
 locale = 'en-us'
 title = 'D. Hess Media'
 theme = 'dhessmedia'
