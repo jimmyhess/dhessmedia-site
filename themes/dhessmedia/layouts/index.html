@@ -1,0 +1,141 @@
+{{ define "main" }}
+<section id="hero" class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        We Build<br>
+        <span class="accent">Digital Experiences</span>
+      </h1>
+      <p class="hero-tagline">{{ site.Params.tagline }}</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary scroll-link">Get Started</a>
+        <a href="#services" class="btn btn-secondary scroll-link">Our Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+        </div>
+        <h3>Web Design &amp; Development</h3>
+        <p>Custom websites built with modern technologies that are fast, responsive, and designed to convert visitors into customers.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+          </svg>
+        </div>
+        <h3>Digital Marketing</h3>
+        <p>Strategic digital marketing campaigns that increase your online visibility, drive traffic, and grow your business.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5"></path>
+            <path d="M2 12l10 5 10-5"></path>
+          </svg>
+        </div>
+        <h3>Brand Strategy</h3>
+        <p>Comprehensive brand development that defines your unique identity and creates lasting connections with your audience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-content">
+      <h2 class="section-title">About Us</h2>
+      <p class="about-text">
+        D. Hess Media is a digital agency dedicated to helping businesses thrive in the modern digital landscape. We combine creativity with technical expertise to deliver solutions that not only look great but also drive real results.
+      </p>
+      <p class="about-text">
+        Our team of experienced designers, developers, and strategists work collaboratively to understand your goals and craft tailored solutions that exceed expectations.
+      </p>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Support Available</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <h2 class="section-title">Our Work</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <div class="portfolio-placeholder">Project 1</div>
+        <div class="portfolio-info">
+          <h3>E-Commerce Platform</h3>
+          <p>Web Development</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-placeholder">Project 2</div>
+        <div class="portfolio-info">
+          <h3>Brand Redesign</h3>
+          <p>Brand Strategy</p>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-placeholder">Project 3</div>
+        <div class="portfolio-info">
+          <h3>Marketing Campaign</h3>
+          <p>Digital Marketing</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-content">
+      <form class="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <h3>Let's work together</h3>
+        <p>Ready to start your next project? Get in touch and let's discuss how we can help bring your vision to life.</p>
+        <a href="mailto:hello@dhessmedia.com" class="contact-email">hello@dhessmedia.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

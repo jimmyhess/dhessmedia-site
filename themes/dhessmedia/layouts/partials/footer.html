@@ -1,0 +1,32 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3 class="footer-logo">D. Hess <span class="accent">Media</span></h3>
+        <p class="footer-tagline">{{ site.Params.tagline }}</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          {{ range site.Menus.main }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="social-links">
+          {{ with site.Params.social.github }}
+          <a href="{{ . }}" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          {{ end }}
+          {{ with site.Params.social.linkedin }}
+          <a href="{{ . }}" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ now.Year }} D. Hess Media. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
